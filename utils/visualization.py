@@ -47,12 +47,12 @@ def imshow_image_grid(imgGrid, grid="", titles="", figSize=16):
     plt.pause(10)
     plt.close()
 
-def psnr(img1, img2):
-    return compare_psnr(img1, img2, data_range=255)
+def psnr(img1, img2, data_range=255):
+    return compare_psnr(img1, img2, data_range=data_range)
 
-def ssim(img1, img2):
+def ssim(img1, img2, data_range=255):
     multichannel = False if img1.shape[-1] == 1 else True
-    return compare_ssim(img1, img2, data_range=255, multichannel=multichannel)
+    return compare_ssim(img1, img2, data_range=data_range, multichannel=multichannel)
 
 
 # Test Parts for above functions

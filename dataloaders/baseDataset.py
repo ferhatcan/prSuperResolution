@@ -77,6 +77,7 @@ class BaseDataset(torch.utils.data.Dataset):
 
     def transform(self, image):
         # desired channel number should be checked
+        # @todo become sure to converting single channel input to 3 channel do not corrupt image
         convert_mode = "RGB" if self.channel_number == 3 else "L"
         image = image.convert(convert_mode)
 
@@ -138,6 +139,10 @@ class BaseDataset(torch.utils.data.Dataset):
             lr_ranges = (lr_image.max() - lr_image.min() for i in range(lr_image.shape[0]))
             hr_image = tvF.normalize(hr_image, hr_mins, hr_ranges)
             lr_image = tvF.normalize(lr_image, lr_mins, lr_ranges)
+
+        # if self.channel_number == 3 & hr_image.size[-1] == 1:
+        #     hr_image = hr_image
+        #     lr_image = lr_image
 
         return lr_image, hr_image
 
