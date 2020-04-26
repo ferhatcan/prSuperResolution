@@ -19,7 +19,7 @@ from PIL import ImageFilter
 # +6: Random Crops or ..
 # 7:
 
-class BaseDatasetLoader(torch.utils.data.Dataset):
+class BaseDataset(torch.utils.data.Dataset):
     def __init__(self,
                  image_paths,
                  scale=1,
