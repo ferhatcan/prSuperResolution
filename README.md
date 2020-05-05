@@ -16,6 +16,18 @@ This repository will be use pytorch 1.4.
 - **options.py** includes input parameters that can be easily set or can be loaded from desired config file.
 - **demo.py** It will be written to show samples of trained models.
 
+### Models
+
+|   Model Name  |   Training Status     |  Testing Status    |
+|:-----------:	|:-------------------:	|:-----------------: |
+|    EDSR    	| Done       	        | Done               |
+|    MDSR    	| Waiting       	    | Waiting            |
+|    DDBPN    	| Waiting       	    | Waiting            |
+|    RCAN    	| Waiting       	    | Waiting            |
+|    RDN    	| Waiting       	    | Waiting            |
+|    VDSR    	| Waiting       	    | Waiting            |
+
+
 ## How to add a new SR method?
 
 TODOs:
