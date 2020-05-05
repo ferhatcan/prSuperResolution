@@ -4,6 +4,8 @@ import numpy as np
 import PIL.Image as Image
 
 from dataloaders.irChallangeDataset import irChallangeDataset
+from dataloaders.pffDataset import pffDataset
+
 import model
 import loss
 from options import args
@@ -57,15 +59,15 @@ def imshow(loader):
 
 def main():
     if ckp.ok:
-        loader = irChallangeDataset(args)
+        loader = pffDataset(args)
         _model = model.Model(args, ckp)
-        _loss = loss.Loss(args, ckp)
-        _method = EDSR_training_method(args, loader, _model, _loss, ckp, log_writer=writer)
-        # imshow(loader.loader_test)
-        if args.test_only:
-            _method.test(test_mode="dataset")
-        else:
-            _method.train()
+        # _loss = loss.Loss(args, ckp)
+        # _method = EDSR_training_method(args, loader, _model, _loss, ckp, log_writer=writer)
+        imshow(loader.loader_test)
+        # if args.test_only:
+        #     _method.test(test_mode="dataset")
+        # else:
+        #     _method.train()
 
 if __name__ == '__main__':
     main()

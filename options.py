@@ -6,7 +6,7 @@ import pickle
 
 class options():
     def __init__(self):
-        self.experiment_name    = "fineTuning-2-only-body-pretrained"
+        self.experiment_name    = "PFF-deneme"
         # Hardware Specs
         self.device             = "gpu" # ["cpu", "gpu"]
         self.seed               = 1 # random seed setting for torch.random operations
@@ -16,7 +16,7 @@ class options():
         self.train_set_paths    = ["/home/ferhatcan/Image_Datasets/ir_sr_challange/train"]
         self.test_set_paths     = ["/home/ferhatcan/Image_Datasets/ir_sr_challange/test"]
         self.rgb_range          = 1 # it is used in loss module, if normalized make it 1
-        self.batch_size         = 1
+        self.batch_size         = 4
         self.scale              = 2
         self.include_noise      = True
         self.noise_sigma        = 1
@@ -27,7 +27,7 @@ class options():
         self.random_flips       = True
         self.channel_number     = 1 # taken image channel
         self.n_colors           = 1 # output image channel this should be handled in dataLoader
-        self.hr_shape           = [200, 200]
+        self.hr_shape           = [100, 100]
         self.downgrade          = "bicubic"
         self.validation_size    = 0.2
         self.shuffle_dataset    = True
@@ -50,8 +50,8 @@ class options():
         self.save_best          = True
         self.save_epoch_model   = True
         self.save_path          = os.path.join("./experiments/", self.experiment_name)
-        self.resume             = -1 # -1 --> load latest, 0--> load pre-trained model , else --> load from desired epoch
-        self.pre_train          = "./.pre_trained_weights/EDSR_x2.pt"# "download" # ["download", "PATH/TO/PRE-TRAINED/MODEL"]
+        self.resume             = 0 # -1 --> load latest, 0--> load pre-trained model , else --> load from desired epoch
+        self.pre_train          = "./.pre_trained_weights/pff_epoch-445.paramOnly"# "download" # ["download", "PATH/TO/PRE-TRAINED/MODEL"]
         self.only_body          = False # it should be true transfer knowdlegde from RGB
         self.fine_tuning        = False
         self.freeze_initial_layers = False
@@ -66,7 +66,7 @@ class options():
         self.test_visualize     = False
         self.test_image_save    = False
         # Model parameters
-        self.model              = 'EDSR'
+        self.model              = 'PFF'
         self.self_ensemble      = False
         self.pre_trained_dir    = ""
         # Optimization Specs
