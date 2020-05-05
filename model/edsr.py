@@ -28,8 +28,12 @@ class EDSR(nn.Module):
             self.url = url[url_name]
         else:
             self.url = None
-        self.sub_mean = common.MeanShift(args.rgb_range)
-        self.add_mean = common.MeanShift(args.rgb_range, sign=1)
+        if args.n_colors == 3:
+            self.sub_mean = common.MeanShift(args.rgb_range)
+            self.add_mean = common.MeanShift(args.rgb_range, sign=1)
+        elif args.n_colors == 1:
+            self.sub_mean = common.MeanShift1channel(args.rgb_range)
+            self.add_mean = common.MeanShift1channel(args.rgb_range, sign=1)
 
         # define head module
         m_head = [conv(args.n_colors, n_feats, kernel_size)]
@@ -64,9 +68,19 @@ class EDSR(nn.Module):
 
         return x 
 
-    def load_state_dict(self, state_dict, strict=True):
+    def load_state_dict(self, state_dict, strict=True, onlyBody=False):
         own_state = self.state_dict()
+        if onlyBody:
+            notcopyingWeights = ["sub_mean", "add_mean", "head", "tail.1"]
+        else:
+            notcopyingWeights = []
         for name, param in state_dict.items():
+            if notcopyingWeights == []:
+                tmp = [-4]
+            else:
+                tmp = [name.find(str) for str in notcopyingWeights]
+            if not sum(tmp) == -4:
+                continue
             if name in own_state:
                 if isinstance(param, nn.Parameter):
                     param = param.data

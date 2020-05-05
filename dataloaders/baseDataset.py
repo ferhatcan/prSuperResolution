@@ -76,10 +76,8 @@ class BaseDataset(torch.utils.data.Dataset):
         return self.transform(hr_image)
 
     def transform(self, image):
-        # desired channel number should be checked
-        # @todo become sure to converting single channel input to 3 channel do not corrupt image
-        convert_mode = "RGB" if self.channel_number == 3 else "L"
-        image = image.convert(convert_mode)
+        if self.channel_number == 1:
+            image = image.convert('L')
 
         # Resize input image if its dimensions smaller than desired dimensions
         resize = transforms.Resize(size=self.hr_shape, interpolation=self.downgrade)
@@ -118,6 +116,10 @@ class BaseDataset(torch.utils.data.Dataset):
                                          np.random.normal(self.noise_mean, self.noise_sigma, lr_image.shape)),
                                         a_min=0, a_max=255).astype("uint8"))
 
+        # desired channel number should be checked
+        if self.channel_number == 3 and lr_image.shape[-1] == 1:
+            lr_image = np.stack([lr_image[np.newaxis, ...]] * 3, axis=0)
+            hr_image = np.stack([hr_image[np.newaxis, ...]] * 3, axis=0)
 
         # Transform to tensor
         hr_image = tvF.to_tensor(Image.fromarray(hr_image))
@@ -126,17 +128,17 @@ class BaseDataset(torch.utils.data.Dataset):
         # apply normalization
         if self.normalize == "zeroMean":
             # todo Mean & STD of the dataset should be given or It can be calculated in a method
-            hr_means = (hr_image.mean() for i in range(hr_image.shape[0]))
-            lr_means = (lr_image.mean() for i in range(lr_image.shape[0]))
-            hr_stds = (hr_image.std() for i in range(hr_image.shape[0]))
-            lr_stds = (lr_image.std() for i in range(lr_image.shape[0]))
+            hr_means = [hr_image.mean() for i in range(hr_image.shape[0])]
+            lr_means = [lr_image.mean() for i in range(lr_image.shape[0])]
+            hr_stds = [hr_image.std() for i in range(hr_image.shape[0])]
+            lr_stds = [lr_image.std() for i in range(lr_image.shape[0])]
             hr_image = tvF.normalize(hr_image, hr_means, hr_stds)
             lr_image = tvF.normalize(lr_image, lr_means, lr_stds)
         elif self.normalize == "between01":
-            hr_mins = (hr_image.min() for i in range(hr_image.shape[0]))
-            lr_mins = (lr_image.min() for i in range(lr_image.shape[0]))
-            hr_ranges = (hr_image.max() - hr_image.min() for i in range(hr_image.shape[0]))
-            lr_ranges = (lr_image.max() - lr_image.min() for i in range(lr_image.shape[0]))
+            hr_mins = [hr_image.min() for i in range(hr_image.shape[0])]
+            lr_mins = [lr_image.min() for i in range(lr_image.shape[0])]
+            hr_ranges = [hr_image.max() - hr_image.min() for i in range(hr_image.shape[0])]
+            lr_ranges = [lr_image.max() - lr_image.min() for i in range(lr_image.shape[0])]
             hr_image = tvF.normalize(hr_image, hr_mins, hr_ranges)
             lr_image = tvF.normalize(lr_image, lr_mins, lr_ranges)
 

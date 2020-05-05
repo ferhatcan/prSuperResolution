@@ -6,7 +6,7 @@ import pickle
 
 class options():
     def __init__(self):
-        self.experiment_name    = "fineTuning"
+        self.experiment_name    = "fineTuning-2-only-body-pretrained"
         # Hardware Specs
         self.device             = "gpu" # ["cpu", "gpu"]
         self.seed               = 1 # random seed setting for torch.random operations
@@ -16,18 +16,18 @@ class options():
         self.train_set_paths    = ["/home/ferhatcan/Image_Datasets/ir_sr_challange/train"]
         self.test_set_paths     = ["/home/ferhatcan/Image_Datasets/ir_sr_challange/test"]
         self.rgb_range          = 1 # it is used in loss module, if normalized make it 1
-        self.batch_size         = 4
+        self.batch_size         = 1
         self.scale              = 2
         self.include_noise      = True
         self.noise_sigma        = 1
         self.noise_mean         = 0
         self.include_blur       = True
-        self.blur_radius        = 2
+        self.blur_radius        = 0.2
         self.normalize          = "between01"
         self.random_flips       = True
-        self.channel_number     = 3 # taken image channel
-        self.n_colors           = 3 # output image channel this shoulb be handled in dataLoader
-        self.hr_shape           = [128, 128]
+        self.channel_number     = 1 # taken image channel
+        self.n_colors           = 1 # output image channel this should be handled in dataLoader
+        self.hr_shape           = [200, 200]
         self.downgrade          = "bicubic"
         self.validation_size    = 0.2
         self.shuffle_dataset    = True
@@ -38,26 +38,27 @@ class options():
 
         # Training Parameters
         self.training           = True
-        self.epoch_num          = 1e6
-        self.loss               = "1*MSE" # "5*VGG54+0.15*GAN" # weight*loss_type + weight*loss_type --> two different loss function
+        self.epoch_num          = 1000
+        self.loss               = "0.8*MSE+0.2*L1" # "5*VGG54+0.15*GAN" # weight*loss_type + weight*loss_type --> two different loss function
         self.skip_thr           = 1e8 # skip if a batch have high error
         self.image_range        = 1 # 255
         self.log_every          = 100 # batch number
-        self.validate_every     = 0.2
+        self.validate_every     = 0.4
         self.log_psnr           = True
         self.log_ssim           = False
         self.log_losses         = True
         self.save_best          = True
         self.save_epoch_model   = True
         self.save_path          = os.path.join("./experiments/", self.experiment_name)
-        self.resume             = 0 # -1 --> load latest, 0--> load pre-trained model , else --> load from desired epoch
+        self.resume             = -1 # -1 --> load latest, 0--> load pre-trained model , else --> load from desired epoch
         self.pre_train          = "./.pre_trained_weights/EDSR_x2.pt"# "download" # ["download", "PATH/TO/PRE-TRAINED/MODEL"]
-        self.fine_tuning        = True
-        self.freeze_initial_layers = True
+        self.only_body          = False # it should be true transfer knowdlegde from RGB
+        self.fine_tuning        = False
+        self.freeze_initial_layers = False
         self.chop               = False
         self.save_models        = False
         # Testing Parameters
-        self.test_only          = False
+        self.test_only          = True
         self.log_test_result    = True
         self.test_single        = False
         self.test_psnr          = True
@@ -69,21 +70,21 @@ class options():
         self.self_ensemble      = False
         self.pre_trained_dir    = ""
         # Optimization Specs
-        self.learning_rate      = 1e-4
+        self.learning_rate      = 5e-5
         self.decay              = '200'
         self.decay_factor_gamma = 0.5
-        self.optimizer          = "ADAM" # options: ['ADAM', 'SGD', 'RMSprop']
+        self.optimizer          = "SGD" # options: ['ADAM', 'SGD', 'RMSprop']
         self.momentum           = 0.9 # option for SGD
         self.betas              = (0.9, 0.999) # option for ADAM
         self.epsilon            = 1e-8  # option for ADAM
         self.weight_decay       = 0
         self.gclip              = 0  # gradient clip between [-gclip, gclip], 0 means no clipping
         # Save config
-        self.config_name        = "configs/config_EDSRx2_rgb.cfg"
+        self.config_name        = "configs/" + self.model + "x{}".format(self.scale) + "_" + self.experiment_name
         self.save_config        = True
         self.load_config        = False
         # Checkpoint
-        self.load               = ""
+        self.load               = ''
         self.save               = "./ckpts/" + self.model + "x{}".format(self.scale) + "/" + self.experiment_name
         self.reset              = False
         self.data_test          = ''

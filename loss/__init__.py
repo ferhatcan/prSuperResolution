@@ -63,7 +63,8 @@ class Loss(nn.modules.loss._Loss):
             self.loss_module = nn.DataParallel(
                 self.loss_module, range(args.n_GPUs)
             )
-        if args.load != '': self.load(ckp.dir, cpu=args.cpu)
+        cpu = True if args.device == "cpu" else False
+        if args.load != '': self.load(ckp.dir, cpu=cpu)
 
     def forward(self, sr, hr, type="train"):
         losses = []

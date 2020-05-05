@@ -17,7 +17,7 @@ class Model(nn.Module):
         self.self_ensemble = args.self_ensemble
         self.chop = args.chop
         self.precision = args.precision
-        self.device = device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
+        self.device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
         self.n_GPUs = args.n_GPUs
         self.save_models = args.save_models
 
@@ -26,6 +26,7 @@ class Model(nn.Module):
         if args.precision == 'half':
             self.model.half()
 
+        self.only_body = args.only_body
         self.load(
             ckp.get_path('model'),
             pre_train=args.pre_train,
@@ -35,7 +36,7 @@ class Model(nn.Module):
         with open(ckp.get_path(ckp.log_model_architecture), open_type) as f:
             print(self.model, file=f)
 
-    def forward(self, x, idx_scale):
+    def forward(self, x, idx_scale=0):
         self.idx_scale = idx_scale
         if hasattr(self.model, 'set_scale'):
             self.model.set_scale(idx_scale)
@@ -60,7 +61,7 @@ class Model(nn.Module):
         save_dirs = [os.path.join(apath, 'model_latest.pt')]
 
         if is_best:
-            save_dirs.append(os.path.join(apath, 'model_best.pt'))
+            save_dirs = [os.path.join(apath, 'model_best.pt')]
         if self.save_models:
             save_dirs.append(
                 os.path.join(apath, 'model_{}.pt'.format(epoch))
@@ -76,6 +77,7 @@ class Model(nn.Module):
             kwargs = {'map_location': lambda storage, loc: storage}
 
         if resume == -1:
+            print('Load the model_best')
             load_from = torch.load(
                 os.path.join(apath, 'model_latest.pt'),
                 **kwargs
@@ -100,7 +102,7 @@ class Model(nn.Module):
             )
 
         if load_from:
-            self.model.load_state_dict(load_from, strict=False)
+            self.model.load_state_dict(load_from, strict=False, onlyBody=self.only_body)
 
     def forward_chop(self, *args, shave=10, min_size=160000):
         scale = 1 if self.input_large else self.scale[self.idx_scale]

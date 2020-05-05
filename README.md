@@ -14,6 +14,7 @@ This repository will be use pytorch 1.4.
 
 - **main.py** is an example of how the architecture can be used to train or test desired model.
 - **options.py** includes input parameters that can be easily set or can be loaded from desired config file.
+- **demo.py** It will be written to show samples of trained models.
 
 ## How to add a new SR method?
 

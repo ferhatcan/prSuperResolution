@@ -6,17 +6,24 @@ from dataloaders.baseDataset import BaseDataset
 class irChallangeDataset():
     def __init__(self, args):
         self.args = args
+
         self.ds_train = BaseDataset(self.args.train_set_paths,
-                                      scale=self.args.scale, normalize=self.args.normalize,
-                                      hr_shape=self.args.hr_shape,
-                                      randomflips=self.args.random_flips,
-                                      channel_number=self.args.channel_number,
-                                    )
+                                    scale=self.args.scale, include_noise=args.include_noise,
+                                    noise_sigma=args.noise_sigma,
+                                    noise_mean=args.noise_mean, include_blur=args.include_blur,
+                                    blur_radius=args.blur_radius,
+                                    normalize=self.args.normalize, randomflips=args.random_flips,
+                                    channel_number=self.args.channel_number,
+                                    hr_shape=self.args.hr_shape, downgrade=args.downgrade)
+
         self.ds_test = BaseDataset(self.args.test_set_paths,
-                                      scale=self.args.scale, normalize=self.args.normalize,
-                                      hr_shape=self.args.hr_shape,
-                                      randomflips=self.args.random_flips,
-                                      channel_number=self.args.channel_number,)
+                                   scale=self.args.scale, include_noise=args.include_noise,
+                                   noise_sigma=args.noise_sigma,
+                                   noise_mean=args.noise_mean, include_blur=args.include_blur,
+                                   blur_radius=args.blur_radius,
+                                   normalize=self.args.normalize, randomflips=args.random_flips,
+                                   channel_number=self.args.channel_number,
+                                   hr_shape=self.args.hr_shape, downgrade=args.downgrade)
 
         dataset_size = len(self.ds_train)
         indices = list(range(dataset_size))

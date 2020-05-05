@@ -21,7 +21,7 @@ class checkpoint():
         else:
             self.dir = os.path.join('.', 'experiment', args.load)
             if os.path.exists(self.dir):
-                self.log = torch.load(self.get_path('log.pt'))
+                self.log = torch.load(self.get_path('loss_log.pt'))
                 print('Continue from epoch {}...'.format(len(self.log)))
             else:
                 args.load = ''
@@ -53,7 +53,7 @@ class checkpoint():
     def save(self, method, epoch, is_best=False):
         method.model.save(self.get_path('model'), epoch, is_best=is_best)
         method.loss.save(self.dir)
-        method.loss.plot_loss(self.dir)
+        # method.loss.plot_loss(self.dir, epoch)
         method.optimizer.save(self.dir)
 
     def load(self, method, is_best=True):
@@ -70,6 +70,6 @@ class checkpoint():
                 f.close()
         elif type == 'validation':
             open_type = 'a' if os.path.exists(self.get_path(self.log_valid_file_name)) else 'w'
-            with open(self.get_path(self.log_file_name), open_type) as f:
+            with open(self.get_path(self.log_valid_file_name), open_type) as f:
                 f.write(log + '\n')
                 f.close()
