@@ -47,8 +47,7 @@ class upscaleLr(BaseDataset):
         lr_image, hr_image = self.transform(hr_image)
 
         # Upscale lr_image
-        resize = torch.nn.Upsample(scale_factor=self.args.scale, mode='bicubic') # bicubic only suppart 4D
-        print(lr_image.dim())
-        lr_image = resize(lr_image.unsqueeze(0)).squeeze()
+        lr_image = torch.nn.functional.interpolate(lr_image.unsqueeze(0),
+                                                   scale_factor=self.scale, mode='bicubic', align_corners=True).squeeze() # bicubic only suppart 4D
 
         return lr_image, hr_image

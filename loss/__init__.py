@@ -15,10 +15,12 @@ class Loss(nn.modules.loss._Loss):
     def __init__(self, args, ckp):
         super(Loss, self).__init__()
         print('Preparing loss function:')
+        device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
 
         self.n_GPUs = args.n_GPUs
         self.loss = []
         self.loss_module = nn.ModuleList()
+
         for loss in args.loss.split('+'):
             weight, loss_type = loss.split('*')
             if loss_type == 'MSE':
@@ -30,6 +32,12 @@ class Loss(nn.modules.loss._Loss):
                 loss_function = getattr(module, 'VGG')(
                     loss_type[3:],
                     rgb_range=args.rgb_range
+                )
+            elif loss_type.find('PFF') >=0:
+                module = import_module('loss.lossOrderedPairReconstruction')
+                loss_function = getattr(module, 'lossOrderedPairReconstruction')(
+                    device=device,
+                    filterSize=17 #args.pff_filter_size
                 )
             elif loss_type.find('GAN') >= 0:
                 module = import_module('loss.adversarial')
@@ -56,7 +64,6 @@ class Loss(nn.modules.loss._Loss):
 
         self.log = torch.Tensor()
 
-        device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
         self.loss_module.to(device)
         if args.precision == 'half': self.loss_module.half()
         if not args.device == "cpu" and args.n_GPUs > 1:
@@ -66,11 +73,17 @@ class Loss(nn.modules.loss._Loss):
         cpu = True if args.device == "cpu" else False
         if args.load != '': self.load(ckp.dir, cpu=cpu)
 
-    def forward(self, sr, hr, type="train"):
+        self.loss_types = [self.loss[i]['type'] for i in range(len(self.loss))]
+
+    def forward(self, sr, hr, lr=None,type="train"):
         losses = []
         for i, l in enumerate(self.loss):
             if l['function'] is not None:
-                loss = l['function'](sr, hr)
+                if l['type'] == 'PFF':
+                    assert(not lr == None), "PFF needs input image!!!"
+                    loss = l['function'](lr, hr, sr)
+                else:
+                    loss = l['function'](sr, hr)
                 effective_loss = l['weight'] * loss
                 losses.append(effective_loss)
                 if type == 'train':

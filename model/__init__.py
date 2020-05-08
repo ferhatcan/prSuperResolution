@@ -27,11 +27,11 @@ class Model(nn.Module):
             self.model.half()
 
         self.only_body = args.only_body
-        self.load(
-            ckp.get_path('model'),
-            pre_train=args.pre_train,
-            resume=args.resume,
-        )
+        # self.load(
+        #     ckp.get_path('model'),
+        #     pre_train=args.pre_train,
+        #     resume=args.resume,
+        # )
         open_type = 'a' if os.path.exists(ckp.get_path(ckp.log_model_architecture)) else 'w'
         with open(ckp.get_path(ckp.log_model_architecture), open_type) as f:
             print(self.model, file=f)
@@ -75,27 +75,54 @@ class Model(nn.Module):
         kwargs = {}
         if cpu:
             kwargs = {'map_location': lambda storage, loc: storage}
+        if hasattr(self.model, 'only_body'):
+            default_value = self.model.only_body
+        else:
+            default_value = False
 
         if resume == -1:
-            print('Load the model_best')
-            load_from = torch.load(
-                os.path.join(apath, 'model_latest.pt'),
-                **kwargs
-            )
+            if pre_train == "model_best":
+                print('Load the model_best')
+                if hasattr(self.model, 'only_body'):
+                    self.model.only_body = False
+                try:
+                    load_from = torch.load(
+                    os.path.join(apath, 'model_best.pt'),
+                    **kwargs
+                    )
+                except:
+                    load_from = None
+                    print("There is no model_best.pt saved yet")
+            else:
+                print('Load the model_latest')
+                try:
+                    load_from = torch.load(
+                        os.path.join(apath, 'model_latest.pt'),
+                        **kwargs
+                    )
+                except:
+                    load_from = None
+                    print("There is no model_latest.pt saved yet")
         elif resume == 0:
             if pre_train == 'download':
                 print('Download the model')
                 dir_model = os.path.join('..', 'models')
                 os.makedirs(dir_model, exist_ok=True)
-                load_from = torch.utils.model_zoo.load_url(
-                    self.model.url,
-                    model_dir=dir_model,
-                    **kwargs
-                )
+                try:
+                    load_from = torch.utils.model_zoo.load_url(
+                        self.model.url,
+                        model_dir=dir_model,
+                        **kwargs
+                    )
+                except:
+                    load_from = None
+                    print("Valid download link is not found!")
             elif pre_train:
                 print('Load the model from {}'.format(pre_train))
                 load_from = torch.load(pre_train, **kwargs)
         else:
+            if hasattr(self.model, 'only_body'):
+                self.model.only_body = False
             load_from = torch.load(
                 os.path.join(apath, 'model_{}.pt'.format(resume)),
                 **kwargs
@@ -103,6 +130,8 @@ class Model(nn.Module):
 
         if load_from:
             self.model.load_state_dict(load_from, strict=False)
+            if hasattr(self.model, 'only_body'):
+                self.model.only_body = default_value
 
     def forward_chop(self, *args, shave=10, min_size=160000):
         scale = 1 if self.input_large else self.scale[self.idx_scale]

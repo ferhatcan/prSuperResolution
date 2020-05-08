@@ -21,8 +21,12 @@ class checkpoint():
         else:
             self.dir = os.path.join('.', 'experiment', args.load)
             if os.path.exists(self.dir):
-                self.log = torch.load(self.get_path('loss_log.pt'))
-                print('Continue from epoch {}...'.format(len(self.log)))
+                try:
+                    self.log = torch.load(self.get_path('loss_log.pt'))
+                    print('Continue from epoch {}...'.format(len(self.log)))
+                except:
+                    self.log = []
+                    print('Continue from epoch {}...'.format(1))
             else:
                 args.load = ''
 
@@ -57,7 +61,7 @@ class checkpoint():
         method.optimizer.save(self.dir)
 
     def load(self, method, is_best=True):
-        method.model.load(apath=self.get_path('model'), resume=-1)
+        method.model.load(apath=self.get_path('model'), pre_train="model_best",resume=-1)
         method.loss.load(self.dir)
         method.optimizer.load(self.dir)
 

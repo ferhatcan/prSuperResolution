@@ -18,6 +18,7 @@ class EDSR(nn.Module):
     def __init__(self, args, conv=common.default_conv):
         super(EDSR, self).__init__()
 
+        self.only_body = args.only_body
         n_resblocks = args.n_resblocks
         n_feats = args.n_feats
         kernel_size = 3 
@@ -68,9 +69,9 @@ class EDSR(nn.Module):
 
         return x 
 
-    def load_state_dict(self, state_dict, strict=True, onlyBody=False):
+    def load_state_dict(self, state_dict, strict=True):
         own_state = self.state_dict()
-        if onlyBody:
+        if self.only_body:
             notcopyingWeights = ["sub_mean", "add_mean", "head", "tail.1"]
         else:
             notcopyingWeights = []

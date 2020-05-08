@@ -28,8 +28,8 @@ class SiamesePixelEmbed(nn.Module):
             nn.Conv2d(self.filterSize2Channel, self.filterSize2Channel, kernel_size=3, padding=1, bias=True)
         )
 
-
-    def forward(self, inputs1, inputs2):
+    # @todo inputs2???
+    def forward(self, inputs1, inputs2=None):
         self.rawEmbFeature1 = self.PEMbase.forward(inputs1)
 
         self.embFeature1_to_2 = self.ordered_embedding(self.rawEmbFeature1)

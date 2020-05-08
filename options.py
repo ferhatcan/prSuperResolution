@@ -1,107 +1,122 @@
 # It includes input arguments and options used in system
-
-import torch
-import os
-import pickle
-
-class options():
-    def __init__(self):
-        self.experiment_name    = "PFF-deneme"
-        # Hardware Specs
-        self.device             = "gpu" # ["cpu", "gpu"]
-        self.seed               = 1 # random seed setting for torch.random operations
-        self.n_GPUs             = 1
-        self.precision          = "full"
-        # Dataset parameters
-        self.train_set_paths    = ["/home/ferhatcan/Image_Datasets/ir_sr_challange/train"]
-        self.test_set_paths     = ["/home/ferhatcan/Image_Datasets/ir_sr_challange/test"]
-        self.rgb_range          = 1 # it is used in loss module, if normalized make it 1
-        self.batch_size         = 4
-        self.scale              = 2
-        self.include_noise      = True
-        self.noise_sigma        = 1
-        self.noise_mean         = 0
-        self.include_blur       = True
-        self.blur_radius        = 0.2
-        self.normalize          = "between01"
-        self.random_flips       = True
-        self.channel_number     = 1 # taken image channel
-        self.n_colors           = 1 # output image channel this should be handled in dataLoader
-        self.hr_shape           = [100, 100]
-        self.downgrade          = "bicubic"
-        self.validation_size    = 0.2
-        self.shuffle_dataset    = True
-        # Model parameters
-        self.n_resblocks        = 32
-        self.n_feats            = 256
-        self.res_scale          = 0.1
-
-        # Training Parameters
-        self.training           = True
-        self.epoch_num          = 1000
-        self.loss               = "0.8*MSE+0.2*L1" # "5*VGG54+0.15*GAN" # weight*loss_type + weight*loss_type --> two different loss function
-        self.skip_thr           = 1e8 # skip if a batch have high error
-        self.image_range        = 1 # 255
-        self.log_every          = 100 # batch number
-        self.validate_every     = 0.4
-        self.log_psnr           = True
-        self.log_ssim           = False
-        self.log_losses         = True
-        self.save_best          = True
-        self.save_epoch_model   = True
-        self.save_path          = os.path.join("./experiments/", self.experiment_name)
-        self.resume             = 0 # -1 --> load latest, 0--> load pre-trained model , else --> load from desired epoch
-        self.pre_train          = "./.pre_trained_weights/pff_epoch-445.paramOnly"# "download" # ["download", "PATH/TO/PRE-TRAINED/MODEL"]
-        self.only_body          = False # it should be true transfer knowdlegde from RGB
-        self.fine_tuning        = False
-        self.freeze_initial_layers = False
-        self.chop               = False
-        self.save_models        = False
-        # Testing Parameters
-        self.test_only          = True
-        self.log_test_result    = True
-        self.test_single        = False
-        self.test_psnr          = True
-        self.test_ssim          = False
-        self.test_visualize     = False
-        self.test_image_save    = False
-        # Model parameters
-        self.model              = 'PFF'
-        self.self_ensemble      = False
-        self.pre_trained_dir    = ""
-        # Optimization Specs
-        self.learning_rate      = 5e-5
-        self.decay              = '200'
-        self.decay_factor_gamma = 0.5
-        self.optimizer          = "SGD" # options: ['ADAM', 'SGD', 'RMSprop']
-        self.momentum           = 0.9 # option for SGD
-        self.betas              = (0.9, 0.999) # option for ADAM
-        self.epsilon            = 1e-8  # option for ADAM
-        self.weight_decay       = 0
-        self.gclip              = 0  # gradient clip between [-gclip, gclip], 0 means no clipping
-        # Save config
-        self.config_name        = "configs/" + self.model + "x{}".format(self.scale) + "_" + self.experiment_name
-        self.save_config        = True
-        self.load_config        = False
-        # Checkpoint
-        self.load               = ''
-        self.save               = "./ckpts/" + self.model + "x{}".format(self.scale) + "/" + self.experiment_name
-        self.reset              = False
-        self.data_test          = ''
+from configparser import ConfigParser
 
 
+class options:
+    def __init__(self, config_file_name):
+        self.config = ConfigParser()
+        self.config.read(config_file_name)
 
-args = options()
-print("The system will use following resource: {:}".format(args.device))
-print("Experiment Name: " + args.experiment_name)
-print("Experiment will be saved to " + args.save_path)
+        self.parseDefaults()
+        self.parseHarware()
+        self.parseDataset()
+        self.parseModel()
+        self.parseOptimization()
+        self.parseOptimization()
+        self.parseTraining()
+        self.parseTesting()
+        self.parseCheckpoint()
 
-if args.save_config:
-    with open(args.config_name, 'wb') as config_dictionary_file:
-        pickle.dump(args, config_dictionary_file)
-    print("Options are stored to ", args.config_name)
+    def parseDefaults(self):
+        self.experiment_name = self.config["DEFAULT"]["experiment_name"]
 
-if args.load_config:
-    with open(args.config_name, 'rb') as config_dictionary_file:
-        args = pickle.load(config_dictionary_file)
-    print("Options are loaded from ", args.config_name)
+    def parseHarware(self):
+        self.device     = self.config["HARDWARE"]["device"]
+        self.seed       = int(self.config["HARDWARE"]["seed"])
+        self.n_GPUs     = int(self.config["HARDWARE"]["n_GPUs"])
+        self.precision  = self.config["HARDWARE"]["precision"]
+
+    def parseDataset(self):
+        self.train_set_paths    = self.config["DATASET"]["train_set_paths"].split(',')
+        self.test_set_paths     = self.config["DATASET"]["test_set_paths"].split(',')
+        self.rgb_range          = int(self.config["DATASET"]["rgb_range"])
+        self.batch_size         = int(self.config["DATASET"]["batch_size"])
+        self.scale              = int(self.config["DATASET"]["scale"])
+        self.include_noise      = self.config["DATASET"].getboolean("include_noise")
+        self.noise_sigma        = float(self.config["DATASET"]["noise_sigma"])
+        self.noise_mean         = float(self.config["DATASET"]["noise_mean"])
+        self.include_blur       = self.config["DATASET"].getboolean("include_blur")
+        self.blur_radius        = float(self.config["DATASET"]["blur_radius"])
+        self.normalize          = self.config["DATASET"]["normalize"]
+        self.random_flips       = self.config["DATASET"].getboolean("random_flips")
+        self.channel_number     = int(self.config["DATASET"]["channel_number"])
+        self.n_colors           = int(self.config["DATASET"]["n_colors"])
+        self.hr_shape           = list(map(int, self.config["DATASET"]["hr_shape"].split(',')))
+        self.downgrade          = self.config["DATASET"]["downgrade"]
+        self.validation_size    = float(self.config["DATASET"]["validation_size"])
+        self.shuffle_dataset    = self.config["DATASET"].getboolean("shuffle_dataset")
+
+    def parseModel(self):
+        self.model          = self.config["MODEL"]["model"]
+        self.self_ensemble  = self.config["MODEL"].getboolean("self_ensemble")
+        if self.model == 'EDSR':
+            self.n_resblocks    = int(self.config["EDSR"]["n_resblocks"])
+            self.n_feats        = int(self.config["EDSR"]["n_feats"])
+            self.res_scale      = float(self.config["EDSR"]["res_scale"])
+        elif self.model == 'PFF':
+            self.emb_dimension  = int(self.config["PFF"]["emb_dimension"])
+            self.filterSize     = int(self.config["PFF"]["filterSize"])
+            self.pretrained     = self.config["PFF"].getboolean("pretrained")
+        else:
+            self.n_resblocks    = 32
+            self.n_feats        = 256
+            self.res_scale      = 0.1
+            self.emb_dimension  = 16
+            self.filterSize     = 17
+            self.pretrained     = True
+
+    def parseOptimization(self):
+        self.learning_rate          = float(self.config["OPTIMIZATION"]["learning_rate"])
+        self.decay                  = self.config["OPTIMIZATION"]["decay"]
+        self.decay_factor_gamma     = float(self.config["OPTIMIZATION"]["decay_factor_gamma"])
+        self.optimizer              = self.config["OPTIMIZATION"]["optimizer"]
+        self.momentum               = float(self.config["OPTIMIZATION"]["momentum"])
+        self.betas                  = list(map(float, self.config["OPTIMIZATION"]["betas"].split(',')))
+        self.epsilon                = float(self.config["OPTIMIZATION"]["epsilon"])
+        self.weight_decay           = float(self.config["OPTIMIZATION"]["weight_decay"])
+        self.gclip                  = float(self.config["OPTIMIZATION"]["gclip"])
+
+    def parseCheckpoint(self):
+        if self.config["CHECKPOINT"].getboolean("load"):
+            self.load = "./ckpts/" + self.model + "x{}".format(self.scale) + "/" + self.experiment_name
+        else:
+            self.load = ''
+        if self.config["CHECKPOINT"].getboolean("save"):
+            self.save = "./ckpts/" + self.model + "x{}".format(self.scale) + "/" + self.experiment_name
+        else:
+            self.save = ''
+
+        self.reset      = self.config["CHECKPOINT"].getboolean("reset")
+        self.data_test  = self.config["CHECKPOINT"]["data_test"]
+
+    def parseTraining(self):
+        self.training           = self.config["TRAINING"].getboolean("training")
+        self.epoch_num          = int(self.config["TRAINING"]["epoch_num"])
+        self.loss               = self.config["TRAINING"]["loss"]
+        self.skip_thr           = float(self.config["TRAINING"]["skip_thr"])
+        self.image_range        = int(self.config["TRAINING"]["image_range"])
+        self.log_every          = int(self.config["TRAINING"]["log_every"])
+        self.validate_every     = float(self.config["TRAINING"]["validate_every"])
+        self.log_psnr           = self.config["TRAINING"].getboolean("log_psnr")
+        self.log_ssim           = self.config["TRAINING"].getboolean("log_ssim")
+        self.save_path          = "/experiment/" + self.experiment_name
+        self.pre_train          = self.config["TRAINING"]["pre_train"]
+        self.only_body          = self.config["TRAINING"].getboolean("only_body")
+        self.fine_tuning        = self.config["TRAINING"].getboolean("fine_tuning")
+        self.freeze_initial_layers = self.config["TRAINING"].getboolean("freeze_initial_layers")
+        self.chop               = self.config["TRAINING"].getboolean("chop")
+        self.save_models        = self.config["TRAINING"].getboolean("save_models")
+
+        if self.pre_train in ["load_latest", "load_best"]:
+            self.resume = -1  # -1 --> load latest, 0--> load pre-trained model , else --> load from desired epoch
+        else:
+            self.resume = 0
+
+    def parseTesting(self):
+        self.test_only              = self.config["TESTING"].getboolean("test_only")
+        self.log_test_result        = self.config["TESTING"].getboolean("log_test_result")
+        self.test_single            = self.config["TESTING"].getboolean("test_single")
+        self.test_psnr              = self.config["TESTING"].getboolean("test_psnr")
+        self.test_ssim              = self.config["TESTING"].getboolean("test_ssim")
+        self.test_visualize         = self.config["TESTING"].getboolean("test_visualize")
+        self.test_image_save        = self.config["TESTING"].getboolean("test_image_save")
