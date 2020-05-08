@@ -26,6 +26,7 @@ This repository will be use pytorch 1.4.
 |    RCAN    	| Waiting       	    | Waiting            |
 |    RDN    	| Waiting       	    | Waiting            |
 |    VDSR    	| Waiting       	    | Waiting            |
+|    PFF    	| Done       	        | Done              |
 
 
 ## How to add a new SR method?
@@ -33,3 +34,5 @@ This repository will be use pytorch 1.4.
 TODOs:
 - [ ] A figure that explain architecture.
 - [ ] add explanation of usage of basic blocks 
+- [ ] a picture can be used to find SR
+- [ ] a folder that contains test images is taken and their SR versions are saved a desired folder

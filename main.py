@@ -62,6 +62,7 @@ def main():
                                                                     ssim(sr[i, ...].squeeze(), hr[i, ...].squeeze())))
                 imshow_image_grid(np.array(np.concatenate([lr, sr, hr], axis=0)), grid=[3, hr.shape[0]], figSize=10)
         if args.test_only:
+            print("Total number of test image: ", len(loader.loader_test))
             _method.test(test_mode="dataset")
         else:
             _method.train()

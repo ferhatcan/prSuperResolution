@@ -9,9 +9,9 @@ class pffDataset():
     def __init__(self, args):
         self.args = args
 
-        self.ds_train = upscaleLr(args)
+        self.ds_train = upscaleLr(args, train=True)
 
-        self.ds_test = upscaleLr(args)
+        self.ds_test = upscaleLr(args, train=False)
 
         dataset_size = len(self.ds_train)
         indices = list(range(dataset_size))
@@ -31,9 +31,10 @@ class pffDataset():
 
 
 class upscaleLr(BaseDataset):
-    def __init__(self, args):
+    def __init__(self, args, train=True):
         self.args = args
-        super(upscaleLr, self).__init__(self.args.train_set_paths,
+        ds_path = self.args.train_set_paths if train else self.args.test_set_paths
+        super(upscaleLr, self).__init__(ds_path,
                                         scale=self.args.scale, include_noise=args.include_noise,
                                         noise_sigma=args.noise_sigma,
                                         noise_mean=args.noise_mean, include_blur=args.include_blur,
