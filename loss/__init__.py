@@ -11,16 +11,41 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+
 class Loss(nn.modules.loss._Loss):
     def __init__(self, args, ckp):
         super(Loss, self).__init__()
         print('Preparing loss function:')
-        device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
+        self.device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
 
         self.n_GPUs = args.n_GPUs
         self.loss = []
         self.loss_module = nn.ModuleList()
 
+        self.selectLoss(args)
+
+        if len(self.loss) > 1:
+            self.loss.append({'type': 'Total', 'weight': 0, 'function': None})
+
+        for l in self.loss:
+            if l['function'] is not None:
+                print('{:.3f} * {}'.format(l['weight'], l['type']))
+                self.loss_module.append(l['function'])
+
+        self.log = torch.Tensor()
+
+        self.loss_module.to(self.device)
+        if args.precision == 'half': self.loss_module.half()
+        if not args.device == "cpu" and args.n_GPUs > 1:
+            self.loss_module = nn.DataParallel(
+                self.loss_module, range(args.n_GPUs)
+            )
+        cpu = True if args.device == "cpu" else False
+        if args.load != '': self.load(ckp.dir, cpu=cpu)
+
+        self.loss_types = [self.loss[i]['type'] for i in range(len(self.loss))]
+
+    def selectLoss(self, args):
         for loss in args.loss.split('+'):
             weight, loss_type = loss.split('*')
             if loss_type == 'MSE':
@@ -36,7 +61,7 @@ class Loss(nn.modules.loss._Loss):
             elif loss_type.find('PFF') >=0:
                 module = import_module('loss.lossOrderedPairReconstruction')
                 loss_function = getattr(module, 'lossOrderedPairReconstruction')(
-                    device=device,
+                    device=self.device,
                     filterSize=17 #args.pff_filter_size
                 )
             elif loss_type.find('GAN') >= 0:
@@ -54,26 +79,27 @@ class Loss(nn.modules.loss._Loss):
             if loss_type.find('GAN') >= 0:
                 self.loss.append({'type': 'DIS', 'weight': 1, 'function': None})
 
-        if len(self.loss) > 1:
-            self.loss.append({'type': 'Total', 'weight': 0, 'function': None})
+    def definingLosses(self, args):
+        for loss in args.loss.split('+'):
+            weight, loss_type = loss.split('*')
+            if hasattr(nn, loss_type+"Loss"):
+                loss_function = getattr(nn, loss_type+"Loss")
+            else:
+                try:
+                    module = import_module("loss."+loss_type)
+                    loss_function = getattr(module, "make_loss")(args, type)
+                except:
+                    print("Loss type ({}) is undefined!!!".format(loss_type))
+                    continue
 
-        for l in self.loss:
-            if l['function'] is not None:
-                print('{:.3f} * {}'.format(l['weight'], l['type']))
-                self.loss_module.append(l['function'])
-
-        self.log = torch.Tensor()
-
-        self.loss_module.to(device)
-        if args.precision == 'half': self.loss_module.half()
-        if not args.device == "cpu" and args.n_GPUs > 1:
-            self.loss_module = nn.DataParallel(
-                self.loss_module, range(args.n_GPUs)
+            self.loss.append({
+                'type': loss_type,
+                'weight': float(weight),
+                'function': loss_function}
             )
-        cpu = True if args.device == "cpu" else False
-        if args.load != '': self.load(ckp.dir, cpu=cpu)
 
-        self.loss_types = [self.loss[i]['type'] for i in range(len(self.loss))]
+            if loss_type.find('GAN') >= 0:
+                self.loss.append({'type': 'DIS', 'weight': 1, 'function': None})
 
     def forward(self, sr, hr, lr=None,type="train"):
         losses = []

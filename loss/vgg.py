@@ -5,6 +5,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.models as models
 
+def make_loss(args, type):
+    return VGG(type, args.rgb_range)
+
 class VGG(nn.Module):
     def __init__(self, conv_index, rgb_range=1):
         super(VGG, self).__init__()

@@ -1,0 +1,3243 @@
+2020-05-07-14:40:07
+
+config: <configparser.ConfigParser object at 0x7f95aa272a50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:40:51
+
+config: <configparser.ConfigParser object at 0x7f56cfcdea50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:41:13
+
+config: <configparser.ConfigParser object at 0x7f87b6188a50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:41:17
+
+config: <configparser.ConfigParser object at 0x7fd6fcc0c1d0>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:43:45
+
+config: <configparser.ConfigParser object at 0x7fe88df71a10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:44:53
+
+config: <configparser.ConfigParser object at 0x7f87a1919e90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:46:34
+
+config: <configparser.ConfigParser object at 0x7ff234e5ba50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:47:17
+
+config: <configparser.ConfigParser object at 0x7f8dbf422210>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:50:31
+
+config: <configparser.ConfigParser object at 0x7f23c50f8a50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:50:56
+
+config: <configparser.ConfigParser object at 0x7fa276aac1d0>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:51:26
+
+config: <configparser.ConfigParser object at 0x7f4d0fe721d0>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:52:44
+
+config: <configparser.ConfigParser object at 0x7fd99035cf90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:54:16
+
+config: <configparser.ConfigParser object at 0x7f3954fefe10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:55:42
+
+config: <configparser.ConfigParser object at 0x7fdfea09de50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:58:01
+
+config: <configparser.ConfigParser object at 0x7ff4a227bb90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:58:15
+
+config: <configparser.ConfigParser object at 0x7ff2f23b1790>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-14:59:51
+
+config: <configparser.ConfigParser object at 0x7faf10603b10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:00:32
+
+config: <configparser.ConfigParser object at 0x7f730a7b7bd0>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:01:51
+
+config: <configparser.ConfigParser object at 0x7f97467d0b90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:02:13
+
+config: <configparser.ConfigParser object at 0x7f12b7caba50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:02:45
+
+config: <configparser.ConfigParser object at 0x7f93ecc62b50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:03:32
+
+config: <configparser.ConfigParser object at 0x7fe275188cd0>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:03:50
+
+config: <configparser.ConfigParser object at 0x7f6756c8eb10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:03:53
+
+config: <configparser.ConfigParser object at 0x7f2b77e3cad0>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:22:51
+
+config: <configparser.ConfigParser object at 0x7f719ec9fb50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:23:19
+
+config: <configparser.ConfigParser object at 0x7f8fc5c45b50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:24:03
+
+config: <configparser.ConfigParser object at 0x7fce48cc6b50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:25:19
+
+config: <configparser.ConfigParser object at 0x7f606eaf2b10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:26:00
+
+config: <configparser.ConfigParser object at 0x7f4fcd2e3b10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:32:15
+
+config: <configparser.ConfigParser object at 0x7fca5910da90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [128, 128]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-15:34:49
+
+config: <configparser.ConfigParser object at 0x7f7996947b10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:02:38
+
+config: <configparser.ConfigParser object at 0x7f3b8896bb50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:05:07
+
+config: <configparser.ConfigParser object at 0x7fe63e169b90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:06:52
+
+config: <configparser.ConfigParser object at 0x7f19f8146b90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:10:20
+
+config: <configparser.ConfigParser object at 0x7fe0aae1cb50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:11:43
+
+config: <configparser.ConfigParser object at 0x7f0e8d52fb50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:13:07
+
+config: <configparser.ConfigParser object at 0x7f269a126b10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:14:38
+
+config: <configparser.ConfigParser object at 0x7f9e1bbfac90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:21:35
+
+config: <configparser.ConfigParser object at 0x7fe363edbb50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [64, 64]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:23:11
+
+config: <configparser.ConfigParser object at 0x7f8d51380b10>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:23:24
+
+config: <configparser.ConfigParser object at 0x7fc27824bb50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:27:45
+
+config: <configparser.ConfigParser object at 0x7fecf6bb1b90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 0.0005
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: 0
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:28:53
+
+config: <configparser.ConfigParser object at 0x7fdb431a5b50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 0.0005
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:36:11
+
+config: <configparser.ConfigParser object at 0x7fdc103a9b90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:36:18
+
+config: <configparser.ConfigParser object at 0x7f6acb4b0b90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 2
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-18:38:47
+
+config: <configparser.ConfigParser object at 0x7fd9a27e5b90>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+
+2020-05-07-19:38:15
+
+config: <configparser.ConfigParser object at 0x7fed47facb50>
+experiment_name: fineTuning
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fineTuning
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fineTuning
+reset: False
+data_test: 
+

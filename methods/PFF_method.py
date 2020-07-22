@@ -26,8 +26,8 @@ class PFF_method(baseMethod):
         # TensorBoard model graph log
         device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
         test_loader = loader.loader_test
-        lr_batch, hr_batch = next(iter(test_loader))
-        lr_batch, hr_batch = lr_batch.to(device), hr_batch.to(device)
+        lr_batch, _ = next(iter(test_loader))
+        lr_batch = lr_batch.to(device)
         log_writer.add_graph(my_model, lr_batch)
         log_writer.close()
 

@@ -17,6 +17,8 @@ from utils.custom_optimizer import make_optimizer
 from utils.timer import timer
 from utils.visualization import psnr, ssim
 
+import random
+
 
 class baseMethod():
     def __init__(self, args, loader, my_model, my_loss, ckp, log_writer):

@@ -1,0 +1,2550 @@
+2020-05-05-10:51:18
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:08:40
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:08:50
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:09:00
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:09:44
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:10:02
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:10:24
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:15:11
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:15:51
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -1
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:17:11
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: -2
+pre_train: ./.pre_trained_weights/EDSR_x2.pt
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:20:50
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:21:53
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:23:38
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-11:59:36
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:00:29
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:01:20
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:03:09
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:04:20
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:06:01
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:07:18
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:07:49
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:08:58
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:09:29
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:09:57
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:10:24
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:10:44
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:11:31
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:12:01
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 0.8*MSE+0.2*L1
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:25:23
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:38:04
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:38:44
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:39:03
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:39:35
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+
+2020-05-05-12:40:14
+
+experiment_name: PFF-deneme
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1
+noise_mean: 0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 1
+n_colors: 1
+hr_shape: [100, 100]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+n_resblocks: 32
+n_feats: 256
+res_scale: 0.1
+training: True
+epoch_num: 1000
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+log_losses: True
+save_best: True
+save_epoch_model: True
+save_path: ./experiments/PFF-deneme
+resume: 0
+pre_train: ./.pre_trained_weights/pff_epoch-445.paramOnly
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+model: PFF
+self_ensemble: False
+pre_trained_dir: 
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: SGD
+momentum: 0.9
+betas: (0.9, 0.999)
+epsilon: 1e-08
+weight_decay: 0
+gclip: 0
+config_name: configs/PFFx2_PFF-deneme
+save_config: True
+load_config: False
+load: 
+save: ./ckpts/PFFx2/PFF-deneme
+reset: False
+data_test: 
+

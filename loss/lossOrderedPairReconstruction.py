@@ -2,6 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+def make_loss(args, type):
+    device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == "gpu" else "cpu")
+    return lossOrderedPairReconstruction(device, args.filterSize)
+
 # Loss function is used in Predictive Filter Flow
 class lossOrderedPairReconstruction(nn.Module):
     def __init__(self, device='cpu', filterSize=11):

@@ -26,7 +26,7 @@ print("The system will use following resource: {:}".format(args.device))
 print("Experiment Name: " + args.experiment_name)
 print("Experiment will be saved to " + args.save_path)
 
-torch.manual_seed(args.seed)
+# torch.manual_seed(args.seed)
 ckp = checkpoint(args)
 
 tb_experiment_name = "runs/" + args.model + "x{}".format(args.scale) + "/" \

@@ -1,0 +1,4554 @@
+2020-05-07-19:42:59
+
+config: <configparser.ConfigParser object at 0x7efd8f005b50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-07-19:44:08
+
+config: <configparser.ConfigParser object at 0x7f7be816eb90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-07-19:45:24
+
+config: <configparser.ConfigParser object at 0x7f45240b9b50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-07-19:47:58
+
+config: <configparser.ConfigParser object at 0x7f873ad2ab50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-03:17:02
+
+config: <configparser.ConfigParser object at 0x7f8ee4a1ab90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-03:19:57
+
+config: <configparser.ConfigParser object at 0x7fcaa98e8b90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-03:21:52
+
+config: <configparser.ConfigParser object at 0x7fe5be3c3b50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:29:38
+
+config: <configparser.ConfigParser object at 0x7f2a159f5c50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:31:14
+
+config: <configparser.ConfigParser object at 0x7f8e6c8d9c10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:32:15
+
+config: <configparser.ConfigParser object at 0x7f68f72dec50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:36:28
+
+config: <configparser.ConfigParser object at 0x7f9230055cd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:36:53
+
+config: <configparser.ConfigParser object at 0x7f975a46ae50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:37:33
+
+config: <configparser.ConfigParser object at 0x7f693803ecd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:38:11
+
+config: <configparser.ConfigParser object at 0x7fd706917c90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:39:19
+
+config: <configparser.ConfigParser object at 0x7f28551fbb90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:42:46
+
+config: <configparser.ConfigParser object at 0x7fe3f5ebcb90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:43:21
+
+config: <configparser.ConfigParser object at 0x7fe489f22bd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:45:07
+
+config: <configparser.ConfigParser object at 0x7f0287cbbb90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:49:44
+
+config: <configparser.ConfigParser object at 0x7f7742a0db90>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 4
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:50:46
+
+config: <configparser.ConfigParser object at 0x7f0568d2cbd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 4
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [320, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:51:00
+
+config: <configparser.ConfigParser object at 0x7f28ca3debd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 2
+scale: 4
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [320, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:51:16
+
+config: <configparser.ConfigParser object at 0x7f6e84759bd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 4
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [320, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:51:40
+
+config: <configparser.ConfigParser object at 0x7f28ec845bd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 4
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [300, 300]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-09:52:23
+
+config: <configparser.ConfigParser object at 0x7f3830e43bd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 4
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:05:06
+
+config: <configparser.ConfigParser object at 0x7f683472dbd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: False
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:05:23
+
+config: <configparser.ConfigParser object at 0x7fc38e75dd10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 4
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:06:31
+
+config: <configparser.ConfigParser object at 0x7f3126eb9cd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:09:50
+
+config: <configparser.ConfigParser object at 0x7fc1e77cecd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:13:05
+
+config: <configparser.ConfigParser object at 0x7fa2842d6d10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:13:48
+
+config: <configparser.ConfigParser object at 0x7fb019734e10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:16:04
+
+config: <configparser.ConfigParser object at 0x7f05f8dafe50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:17:07
+
+config: <configparser.ConfigParser object at 0x7f14fe7dbd10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: True
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: True
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:19:37
+
+config: <configparser.ConfigParser object at 0x7f69716e3d50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [200, 200]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:19:59
+
+config: <configparser.ConfigParser object at 0x7fd428e29d50>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [296, 296]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-08-10:20:20
+
+config: <configparser.ConfigParser object at 0x7fb7487d5cd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:20:51
+
+config: <configparser.ConfigParser object at 0x7f51186a7d50>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [480, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:31:24
+
+config: <configparser.ConfigParser object at 0x7fa29206ad10>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [480, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:33:38
+
+config: <configparser.ConfigParser object at 0x7f9557db0d10>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [480, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:37:12
+
+config: <configparser.ConfigParser object at 0x7fa30a0a1d50>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [480, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:38:32
+
+config: <configparser.ConfigParser object at 0x7f7e865fcd10>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [480, 640]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:39:28
+
+config: <configparser.ConfigParser object at 0x7f4c264d1d50>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [480, 480]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:40:13
+
+config: <configparser.ConfigParser object at 0x7f931a3b0d10>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [400, 400]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:41:32
+
+config: <configparser.ConfigParser object at 0x7fa1ec080d50>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [296, 296]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:51:45
+
+config: <configparser.ConfigParser object at 0x7f84b2a14d10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [296, 296]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-05-11-09:52:07
+
+config: <configparser.ConfigParser object at 0x7fde32a52d10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:00:11
+
+config: <configparser.ConfigParser object at 0x7fd8391dd490>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:02:48
+
+config: <configparser.ConfigParser object at 0x7fe9f6492490>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:03:40
+
+config: <configparser.ConfigParser object at 0x7ffa6c546450>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:03:54
+
+config: <configparser.ConfigParser object at 0x7f86ca373410>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:08:50
+
+config: <configparser.ConfigParser object at 0x7f7de338f7d0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:09:40
+
+config: <configparser.ConfigParser object at 0x7f71fad23810>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:10:02
+
+config: <configparser.ConfigParser object at 0x7f5a9d986710>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:13:35
+
+config: <configparser.ConfigParser object at 0x7f2eeed65890>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:16:31
+
+config: <configparser.ConfigParser object at 0x7effb664c950>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:17:14
+
+config: <configparser.ConfigParser object at 0x7f79972068d0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:18:47
+
+config: <configparser.ConfigParser object at 0x7fbaae7a3410>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:21:42
+
+config: <configparser.ConfigParser object at 0x7f4433eff410>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:23:45
+
+config: <configparser.ConfigParser object at 0x7f4b7f823410>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: True
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:24:10
+
+config: <configparser.ConfigParser object at 0x7f761933b410>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:25:57
+
+config: <configparser.ConfigParser object at 0x7f3866ebc3d0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [640, 480]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:26:43
+
+config: <configparser.ConfigParser object at 0x7fd5947237d0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [640, 480]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:27:52
+
+config: <configparser.ConfigParser object at 0x7f5b5ea11950>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [640, 480]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:28:19
+
+config: <configparser.ConfigParser object at 0x7fc511f69a10>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [640, 480]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:29:14
+
+config: <configparser.ConfigParser object at 0x7ff8e9085390>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [640, 480]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:29:39
+
+config: <configparser.ConfigParser object at 0x7ff0630ebfd0>
+experiment_name: fromZero
+device: gpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [280, 280]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+
+2020-07-10-09:31:13
+
+config: <configparser.ConfigParser object at 0x7fd680a73390>
+experiment_name: fromZero
+device: cpu
+seed: 1
+n_GPUs: 1
+precision: full
+train_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/train/640_flir_hr']
+test_set_paths: ['/home/ferhatcan/Image_Datasets/ir_sr_challange/test/640_flir_hr']
+rgb_range: 1
+batch_size: 1
+scale: 2
+include_noise: False
+noise_sigma: 1.0
+noise_mean: 0.0
+include_blur: False
+blur_radius: 0.2
+normalize: between01
+random_flips: True
+channel_number: 3
+n_colors: 3
+hr_shape: [640, 480]
+downgrade: bicubic
+validation_size: 0.2
+shuffle_dataset: True
+model: PFF
+self_ensemble: False
+emb_dimension: 16
+filterSize: 17
+pretrained: True
+learning_rate: 5e-05
+decay: 200
+decay_factor_gamma: 0.5
+optimizer: ADAM
+momentum: 0.9
+betas: [0.9, 0.999]
+epsilon: 1e-08
+weight_decay: 0.0
+gclip: 0.0
+training: True
+epoch_num: 100
+loss: 1*PFF
+skip_thr: 100000000.0
+image_range: 1
+log_every: 100
+validate_every: 0.4
+log_psnr: True
+log_ssim: False
+save_path: /experiment/fromZero
+pre_train: load_best
+only_body: False
+fine_tuning: False
+freeze_initial_layers: False
+chop: False
+save_models: False
+resume: -1
+test_only: True
+log_test_result: True
+test_single: False
+test_psnr: True
+test_ssim: False
+test_visualize: False
+test_image_save: False
+load: 
+save: ./ckpts/PFFx2/fromZero
+reset: False
+data_test: 
+

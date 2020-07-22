@@ -1,4 +1,4 @@
-import utility
+from utils.custom_optimizer import make_optimizer
 from types import SimpleNamespace
 
 from model import common
@@ -8,6 +8,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+
+def make_loss(args, type):
+    return Adversarial(args, type)
 
 class Adversarial(nn.Module):
     def __init__(self, args, gan_type):
@@ -30,7 +33,7 @@ class Adversarial(nn.Module):
         else:
             optim_args = args
 
-        self.optimizer = utility.make_optimizer(optim_args, self.dis)
+        self.optimizer = make_optimizer(optim_args, self.dis)
 
     def forward(self, fake, real):
         # updating discriminator...

@@ -2,6 +2,9 @@ from model import common
 
 import torch.nn as nn
 
+def make_loss(args, type):
+    return Discriminator(args)
+
 class Discriminator(nn.Module):
     '''
         output is not normalized
