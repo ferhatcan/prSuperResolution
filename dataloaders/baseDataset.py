@@ -66,7 +66,8 @@ class BaseDataset(torch.utils.data.Dataset):
                     if ext in self.extensions:
                         self.imageFiles.append(os.path.join(root, file))
 
-        assert (len(image_paths) > 0), "There should be an valid image path"
+        if not self.image_paths == []:
+            assert (len(image_paths) > 0), "There should be an valid image path"
 
     def __len__(self):
         return len(self.imageFiles)
@@ -98,13 +99,14 @@ class BaseDataset(torch.utils.data.Dataset):
 
         # apply random transforms
         if self.random_flips:
+            horiz_random, vert_random = self.randomGenerator()
             # random horizontal flip
-            if random.random() > 0.5:
+            if horiz_random > 0.5:
                 hr_image = tvF.hflip(hr_image)
                 lr_image = tvF.hflip(lr_image)
 
             # random vertical flip
-            if random.random() > 0.5:
+            if vert_random > 0.5:
                 hr_image = tvF.vflip(hr_image)
                 lr_image = tvF.vflip(lr_image)
 
@@ -148,6 +150,8 @@ class BaseDataset(torch.utils.data.Dataset):
 
         return lr_image, hr_image
 
+    def randomGenerator(self):
+        return random.random(), random.random()
 
 # Test dataset class
 

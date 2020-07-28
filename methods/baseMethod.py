@@ -46,7 +46,7 @@ class baseMethod():
         self.val_psnr_best = 0
         self.val_ssim_best = 0
 
-    def train_batch(self, lr, hr):
+    def train_batch(self, lr, hr, **kwargs):
         self.optimizer.zero_grad()
         sr = self.model(lr, 0)
         losses, loss_types = self.loss(sr, hr)
@@ -61,7 +61,7 @@ class baseMethod():
 
         return losses, sr
 
-    def test_batch(self, lr, hr=None, evaluation=False, interpolate=False):
+    def test_batch(self, lr, hr=None, evaluation=False, interpolate=False, **kwargs):
         if interpolate:
             lr_batch = [torch.nn.functional.interpolate(lr[i, ...].unsqueeze(0),
                                                         scale_factor=self.scale,

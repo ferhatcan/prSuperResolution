@@ -31,7 +31,7 @@ class PFF_method(baseMethod):
         log_writer.add_graph(my_model, lr_batch)
         log_writer.close()
 
-    def train_batch(self, lr, hr):
+    def train_batch(self, lr, hr, **kwargs):
         self.optimizer.zero_grad()
         embed = self.model(lr, 0)
         losses, loss_types = self.loss(embed, hr, lr=lr)
@@ -46,7 +46,7 @@ class PFF_method(baseMethod):
 
         return losses, embed
 
-    def test_batch(self, lr, hr=None, evaluation=False, interpolate=False):
+    def test_batch(self, lr, hr=None, evaluation=False, interpolate=False, **kwargs):
         if interpolate:
             result = lr
         else:
